@@ -1,203 +1,289 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="az">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PULSE — молодёжный онлайн-магазин стритвир-одежды. Худи, оверсайз-футболки, карго и аксессуары для тех, кто живёт в ритме города." />
-  <title>PULSE — стритвир для тех, кто чувствует ритм</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional mühasibatlıq xidmətləri - vergi hesablanması, maliyyə hesabatları, əməkhaqqı idarəetməsi">
+  <title>AccountPro - Professional Mühasibatlıq Xidmətləri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <header>
     <div class="container header-inner">
-      <a href="index.html" class="logo">PULSE<span class="logo-dot">.</span></a>
-      <nav class="nav" aria-label="Главное меню">
-        <a href="#new">Новинки</a>
-        <a href="#catalog">Каталог</a>
-        <a href="#drops">Дропы</a>
-        <a href="#community">Комьюнити</a>
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M9 7h6M9 11h6M9 15h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+          </svg>
+        </div>
+        AccountPro
+      </a>
+      <nav>
+        <a href="index.html" class="active">Ana Səhifə</a>
+        <a href="services.html">Xidmətlər</a>
+        <a href="about.html">Haqqımızda</a>
+        <a href="#contact">Əlaqə</a>
       </nav>
-      <div class="header-actions">
-        <button class="icon-btn" aria-label="Поиск" id="searchBtn">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        </button>
-        <button class="icon-btn cart-btn" aria-label="Корзина" id="cartBtn">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l2.5 13h11l2.5-9H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
-          <span class="cart-count" id="cartCount">0</span>
-        </button>
-        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+      <a href="#contact" class="contact-btn">Məsləhət alın</a>
+      <button class="burger" aria-label="Menyu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-grid container">
-        <div class="hero-text">
-          <span class="badge">DROP 04 — уже в продаже</span>
-          <h1>Одевайся в&nbsp;ритме <span class="grad">своего города</span></h1>
-          <p class="hero-sub">Стритвир, который выделяет тебя в ленте и&nbsp;в&nbsp;толпе. Лимитированные дропы, дерзкие принты и&nbsp;посадка, которая садится как влитая.</p>
-          <div class="hero-cta">
-            <a href="#catalog" class="btn btn-primary">Смотреть дроп</a>
-            <a href="#community" class="btn btn-ghost">#вPULSE</a>
-          </div>
-          <ul class="hero-meta">
-            <li><strong>120k+</strong><span>в TikTok</span></li>
-            <li><strong>48ч</strong><span>доставка</span></li>
-            <li><strong>4.9★</strong><span>на отзовиках</span></li>
-          </ul>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-card hero-card-1" style="background:linear-gradient(135deg,#ff5ea8,#7a3cff)">
-            <span class="hero-card-tag">NEW</span>
-            <span class="hero-card-title">Худи Neon Wave</span>
-            <span class="hero-card-price">5 490 ₽</span>
-          </div>
-          <div class="hero-card hero-card-2" style="background:linear-gradient(135deg,#00e0c6,#0a84ff)">
-            <span class="hero-card-tag">HOT</span>
-            <span class="hero-card-title">Карго City Run</span>
-            <span class="hero-card-price">4 290 ₽</span>
-          </div>
-          <div class="hero-card hero-card-3" style="background:linear-gradient(135deg,#ffd166,#ef476f)">
-            <span class="hero-card-tag">-20%</span>
-            <span class="hero-card-title">Тиш Oversize</span>
-            <span class="hero-card-price">1 990 ₽</span>
-          </div>
-        </div>
-      </div>
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>FREE SHIPPING ОТ 4000 ₽</span><span>✦</span>
-          <span>NEW DROP КАЖДУЮ ПЯТНИЦУ</span><span>✦</span>
-          <span>СТУДЕНТАМ −15% ПО ISIC</span><span>✦</span>
-          <span>СОБЕРИ СВОЙ ОБРАЗ</span><span>✦</span>
-          <span>FREE SHIPPING ОТ 4000 ₽</span><span>✦</span>
-          <span>NEW DROP КАЖДУЮ ПЯТНИЦУ</span><span>✦</span>
-          <span>СТУДЕНТАМ −15% ПО ISIC</span><span>✦</span>
-          <span>СОБЕРИ СВОЙ ОБРАЗ</span><span>✦</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="categories" id="new">
       <div class="container">
-        <header class="section-head">
-          <h2>Категории</h2>
-          <p>Найди свой вайб — от худи до аксессуаров</p>
-        </header>
-        <div class="cat-grid">
-          <button class="cat-card" data-filter="hoodie"><span>Худи</span></button>
-          <button class="cat-card" data-filter="tee"><span>Футболки</span></button>
-          <button class="cat-card" data-filter="pants"><span>Штаны &amp; карго</span></button>
-          <button class="cat-card" data-filter="acc"><span>Аксессуары</span></button>
-          <button class="cat-card" data-filter="all"><span>Всё подряд</span></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="catalog" id="catalog">
-      <div class="container">
-        <header class="section-head row">
-          <div>
-            <h2>Новый дроп</h2>
-            <p>Лимитированная коллекция, скоро улетит</p>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="section-badge">2005-ci ildən etibarən</span>
+            <h1>Maliyyənizlə <span class="gradient-text">peşəkar</span> davranın</h1>
+            <p>Biz mühasibatlıq hesabatlarından vergi optimallaşdırmasına, əməkhaqqı idarəetməsindən bank əməliyyatlarına qədər bütün maliyyə ehtiyaclarınız üçün hərtərəfli həllər təklif edirik. Komandamız sizin biznesinizin uğurunu dəstəkləməyə hazırdır.</p>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <strong>19+</strong>
+                <span>İllik təcrübə</span>
+              </div>
+              <div class="hero-stat">
+                <strong>500+</strong>
+                <span>Müştəri</span>
+              </div>
+              <div class="hero-stat">
+                <strong>25</strong>
+                <span>Profesional komanda</span>
+              </div>
+            </div>
           </div>
-          <div class="filter-bar" role="tablist">
-            <button class="chip active" data-filter="all">Все</button>
-            <button class="chip" data-filter="hoodie">Худи</button>
-            <button class="chip" data-filter="tee">Футболки</button>
-            <button class="chip" data-filter="pants">Карго</button>
-            <button class="chip" data-filter="acc">Аксессуары</button>
+          <div class="hero-visual">
+            <div class="hero-card">
+              <h3>Xidmətlərimiz</h3>
+              <div class="service-preview">
+                <div class="service-preview-item">
+                  <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="16" y1="13" x2="8" y2="13"/>
+                      <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                  </div>
+                  <span>Mühasibatlıq hesabatları</span>
+                </div>
+                <div class="service-preview-item">
+                  <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                      <line x1="1" y1="10" x2="23" y2="10"/>
+                    </svg>
+                  </div>
+                  <span>Vergi hesablanması</span>
+                </div>
+                <div class="service-preview-item">
+                  <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="12" y1="1" x2="12" y2="23"/>
+                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                  </div>
+                  <span>Əməkhaqqı idarəetməsi</span>
+                </div>
+                <div class="service-preview-item">
+                  <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/>
+                      <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/>
+                      <path d="M18 12a2 2 0 0 0 0 4h4v-4h-4z"/>
+                    </svg>
+                  </div>
+                  <span>Bank əməliyyatları</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </header>
-
-        <div class="products" id="products"></div>
-      </div>
-    </section>
-
-    <section class="drop-banner" id="drops">
-      <div class="container drop-inner">
-        <div>
-          <span class="badge dark">NEXT DROP</span>
-          <h2>Пятница, 21:00 МСК</h2>
-          <p>«Night City» — капсула из 12 вещей. Подпишись, чтобы не проспать.</p>
         </div>
-        <form class="sub-form" id="subForm" novalidate>
-          <input type="email" placeholder="твой@email" aria-label="Email" required />
-          <button type="submit" class="btn btn-primary">Уведомить меня</button>
-          <span class="sub-status" id="subStatus" aria-live="polite"></span>
-        </form>
       </div>
     </section>
 
-    <section class="community" id="community">
+    <section class="section">
       <div class="container">
-        <header class="section-head">
-          <h2>#вPULSE</h2>
-          <p>Отметь нас в сторис — попади в галерею</p>
-        </header>
-        <div class="social-grid">
-          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#ff7eb3,#ff1f6d)"><span>@anya_rave</span></a>
-          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#7a3cff,#00e0c6)"><span>@kostya_off</span></a>
-          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#ffd166,#06d6a0)"><span>@mira.tape</span></a>
-          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#0a84ff,#7a3cff)"><span>@dvnz</span></a>
-          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#ef476f,#ffd166)"><span>@lera_lo</span></a>
-          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#00e0c6,#0a84ff)"><span>@nikitos</span></a>
+        <div class="section-header">
+          <span class="section-badge">Xidmətlərimiz</span>
+          <h2>Peşəkar mühasibatlıq <span class="gradient-text">xidmətləri</span></h2>
+          <p>Biznesinizin maliyyə sağlamlığını təmin etmək üçün hərtərəfli xidmətlər təklif edirik</p>
         </div>
-        <div class="socials">
-          <a href="#" aria-label="TikTok">TikTok</a>
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="Telegram">Telegram</a>
-          <a href="#" aria-label="VK">VK</a>
+        <div class="services-grid">
+          <div class="service-card" onclick="location.href='services.html'">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h3>Mühasibatlıq hesabatları</h3>
+            <p>Müntəzəm və dəqiq maliyyə hesabatları ilə biznesinizin vəziyyətini izləyin</p>
+          </div>
+          <div class="service-card" onclick="location.href='services.html'">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                <line x1="1" y1="10" x2="23" y2="10"/>
+              </svg>
+            </div>
+            <h3>Vergi hesablanması</h3>
+            <p>Vergi öhdəliklərinizi vaxtında və düzgün şəkildə hesablayın</p>
+          </div>
+          <div class="service-card" onclick="location.href='services.html'">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3>Əməkhaqqı idarəetməsi</h3>
+            <p>Əməkhaqqı hesablanması və ödənişlərin idarə edilməsi</p>
+          </div>
+          <div class="service-card" onclick="location.href='services.html'">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/>
+                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/>
+                <path d="M18 12a2 2 0 0 0 0 4h4v-4h-4z"/>
+              </svg>
+            </div>
+            <h3>Bank əməliyyatları</h3>
+            <p>Bank hesablarınızın idarə edilməsi və əməliyyatların monitorinqi</p>
+          </div>
+          <div class="service-card" onclick="location.href='services.html'">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>İşçi hesabatları</h3>
+            <p>İşçilərin əmək fəaliyyəti haqqında hesabatların aparılması</p>
+          </div>
+          <div class="service-card" onclick="location.href='services.html'">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Vergi auditi</h3>
+            <p>Vergi risklərinin qiymətləndirilməsi və optimallaşdırma</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Niyə bizi seçməlisiniz</span>
+          <h2>İnkişafınız üçün <span class="gradient-text">etibarlı tərəfdaş</span></h2>
+          <p>19 ildən artıq təcrübə ilə biz sizin maliyyə ehtiyaclarınıza peşəkar yanaşırıq</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3>Dəqiqlik</h3>
+            <p>Hər bir hesabatda yüksək dəqiqlik və diqqətlilik</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Vaxtında xidmət</h3>
+            <p>Bütün öhdəliklər vaxtında və keyfiyyətlə yerinə yetirilir</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Məxfilik</h3>
+            <p>Müştəri məlumatlarının tam məxfiliyi təmin edilir</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3>Dəstək</h3>
+            <p>Hər zaman əlaqədəyik və suallarınızı cavablandırırıq</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <h2>Maliyyəniz üçün doğru həll tapın</h2>
+        <p>Biznesinizin maliyyə idarəetməsində sizə kömək etmək üçün buradayıq. İlk məsləhət pulsuzdur.</p>
+        <a href="tel:+994501234567" class="cta-btn">+994 50 123 45 67</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="index.html" class="logo">PULSE<span class="logo-dot">.</span></a>
-        <p class="footer-tag">Стритвир для тех, кто чувствует ритм.</p>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M9 7h6M9 11h6M9 15h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </div>
+            AccountPro
+          </a>
+          <p>2005-ci ildən bəri Azərbaycanın aparıcı mühasibatlıq xidmətləri provayderi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Xidmətlər</h4>
+          <a href="services.html">Mühasibatlıq hesabatları</a>
+          <a href="services.html">Vergi hesablanması</a>
+          <a href="services.html">Əməkhaqqı idarəetməsi</a>
+          <a href="services.html">Bank əməliyyatları</a>
+        </div>
+        <div class="footer-col">
+          <h4>Şirkət</h4>
+          <a href="about.html">Haqqımızda</a>
+          <a href="about.html#team">Komandamız</a>
+          <a href="about.html#timeline">Tariximiz</a>
+        </div>
+        <div class="footer-col">
+          <h4>Əlaqə</h4>
+          <a href="tel:+994501234567">+994 50 123 45 67</a>
+          <a href="mailto:info@accountpro.az">info@accountpro.az</a>
+          <a href="#">Bakı, Azərbaycan</a>
+        </div>
       </div>
-      <div>
-        <h4>Магазин</h4>
-        <a href="#catalog">Каталог</a>
-        <a href="#drops">Дропы</a>
-        <a href="#new">Новинки</a>
-      </div>
-      <div>
-        <h4>Помощь</h4>
-        <a href="#">Доставка</a>
-        <a href="#">Возврат</a>
-        <a href="#">Размерная сетка</a>
-      </div>
-      <div>
-        <h4>Контакты</h4>
-        <a href="mailto:hi@pulse.shop">hi@pulse.shop</a>
-        <a href="#">+7 (999) 123-45-67</a>
+      <div class="footer-bottom">
+        © 2026 AccountPro. Bütün hüquqlar qorunur.
       </div>
     </div>
-    <div class="container copy">© 2026 PULSE. Все права защищены.</div>
   </footer>
-
-  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
-    <div class="drawer-head">
-      <h3>Твоя корзина</h3>
-      <button class="icon-btn" id="closeCart" aria-label="Закрыть">✕</button>
-    </div>
-    <div class="drawer-body" id="cartItems"></div>
-    <div class="drawer-foot">
-      <div class="total"><span>Итого</span><strong id="cartTotal">0 ₽</strong></div>
-      <button class="btn btn-primary btn-block" id="checkoutBtn">Оформить заказ</button>
-    </div>
-  </aside>
-  <div class="overlay" id="overlay"></div>
 
   <script src="script.js"></script>
 </body>

@@ -1,22 +1,45 @@
-# PULSE — молодёжный онлайн-магазин одежды
+# AccountPro - Professional Mühasibatlıq Xidmətləri
 
-Лендинг и витрина стритвир-бренда для аудитории 16–25 лет. HTML + CSS + JS, без сборщиков и зависимостей.
+Azərbaycanda professional mühasibatlıq xidmətləri təqdim edən şirkətin web saytı. HTML + CSS + JS ilə hazırlanmışdır, heç bir build aləti və ya asılılıq yoxdur.
 
-## Что внутри
-- `index.html` — главная: hero, категории, каталог с фильтрами, баннер дропа, комьюнити-секция, футер
-- `styles.css` — тёмная тема с градиентами, адаптивная сетка, анимированная бегущая строка
-- `script.js` — каталог из 12 товаров, фильтры по категориям, избранное, корзина с `localStorage`, выезжающий drawer, тост-уведомления, форма подписки
+## Sayt Strukturu
 
-## Запуск
-Открой `index.html` в браузере — или подними локальный сервер:
+- `index.html` — Ana səhifə: şirkət haqqında məlumat, xidmətlər overview, statistika, CTA bölməsi
+- `services.html` — Xidmətlər səhifəsi: accordion tipli xidmət detalları, qiymətləndirmə paketləri
+- `about.html` — Haqqımızda səhifəsi: tarix, komanda, dəyərlər
+- `styles.css` — Minimalistik və modern dizayn, tam responsiv, gradient elementlər
+- `script.js` — Burger menu, accordion açılması, counter animasiya
+
+## Xidmətlərimiz
+
+- Mühasibatlıq hesabatları
+- Vergi hesablanması və optimallaşdırma
+- Əməkhaqqı idarəetməsi
+- Bank hesablarının idarə edilməsi
+- İşçi hesabatlarının aparılması
+- Vergi auditi və məsləhət
+
+## İşə Salma
+
+`index.html` faylını brauzerdə açın — və ya local server işlədin:
+
 ```bash
 python3 -m http.server 8080
 ```
-И зайди на `http://localhost:8080`.
 
-## Маркетинговые акценты
-- **Тон бренда**: «стритвир для тех, кто чувствует ритм» — энергичный, на «ты»
-- **Соцдоказательство**: цифры в hero (подписчики, скорость доставки, рейтинг), UGC-сетка `#вPULSE`
-- **Срочность**: лимитированные дропы по пятницам, обратный отсчёт через подписку
-- **Студенческий сегмент**: скидка по ISIC в бегущей строке
-- **Каналы**: TikTok / Instagram / Telegram / VK — закреплены в шапке комьюнити
+Sonra `http://localhost:8080` ünvanına gedin.
+
+## Dizayn Xüsusiyyətləri
+
+- **Rəng sxemi**: Professional mavi gradient (#0066cc - #0099e6)
+- **Tipoqrafiya**: Inter şriftsi ailəsi
+- **Responsive**: Mobil, планшет və masa üstü üçün optimize olunub
+- **Animasiyalar**: Smooth hover effektləri, accordion açılması
+- **Navigasiya**: Sabit header, burger menu mobil üçün
+
+## Şirkət Məlumatı
+
+- **Fəaliyyət illəri**: 2005-ci ildən bəri
+- **Komanda**: 25 peşəkar mütəxəssis
+- **Müştəri sayı**: 500+ müştəri
+- **Əlaqə**: +994 50 123 45 67

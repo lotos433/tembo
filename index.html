@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PULSE — молодёжный онлайн-магазин стритвир-одежды. Худи, оверсайз-футболки, карго и аксессуары для тех, кто живёт в ритме города." />
+  <title>PULSE — стритвир для тех, кто чувствует ритм</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">PULSE<span class="logo-dot">.</span></a>
+      <nav class="nav" aria-label="Главное меню">
+        <a href="#new">Новинки</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#drops">Дропы</a>
+        <a href="#community">Комьюнити</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Поиск" id="searchBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Корзина" id="cartBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l2.5 13h11l2.5-9H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-text">
+          <span class="badge">DROP 04 — уже в продаже</span>
+          <h1>Одевайся в&nbsp;ритме <span class="grad">своего города</span></h1>
+          <p class="hero-sub">Стритвир, который выделяет тебя в ленте и&nbsp;в&nbsp;толпе. Лимитированные дропы, дерзкие принты и&nbsp;посадка, которая садится как влитая.</p>
+          <div class="hero-cta">
+            <a href="#catalog" class="btn btn-primary">Смотреть дроп</a>
+            <a href="#community" class="btn btn-ghost">#вPULSE</a>
+          </div>
+          <ul class="hero-meta">
+            <li><strong>120k+</strong><span>в TikTok</span></li>
+            <li><strong>48ч</strong><span>доставка</span></li>
+            <li><strong>4.9★</strong><span>на отзовиках</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card hero-card-1" style="background:linear-gradient(135deg,#ff5ea8,#7a3cff)">
+            <span class="hero-card-tag">NEW</span>
+            <span class="hero-card-title">Худи Neon Wave</span>
+            <span class="hero-card-price">5 490 ₽</span>
+          </div>
+          <div class="hero-card hero-card-2" style="background:linear-gradient(135deg,#00e0c6,#0a84ff)">
+            <span class="hero-card-tag">HOT</span>
+            <span class="hero-card-title">Карго City Run</span>
+            <span class="hero-card-price">4 290 ₽</span>
+          </div>
+          <div class="hero-card hero-card-3" style="background:linear-gradient(135deg,#ffd166,#ef476f)">
+            <span class="hero-card-tag">-20%</span>
+            <span class="hero-card-title">Тиш Oversize</span>
+            <span class="hero-card-price">1 990 ₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>FREE SHIPPING ОТ 4000 ₽</span><span>✦</span>
+          <span>NEW DROP КАЖДУЮ ПЯТНИЦУ</span><span>✦</span>
+          <span>СТУДЕНТАМ −15% ПО ISIC</span><span>✦</span>
+          <span>СОБЕРИ СВОЙ ОБРАЗ</span><span>✦</span>
+          <span>FREE SHIPPING ОТ 4000 ₽</span><span>✦</span>
+          <span>NEW DROP КАЖДУЮ ПЯТНИЦУ</span><span>✦</span>
+          <span>СТУДЕНТАМ −15% ПО ISIC</span><span>✦</span>
+          <span>СОБЕРИ СВОЙ ОБРАЗ</span><span>✦</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="new">
+      <div class="container">
+        <header class="section-head">
+          <h2>Категории</h2>
+          <p>Найди свой вайб — от худи до аксессуаров</p>
+        </header>
+        <div class="cat-grid">
+          <button class="cat-card" data-filter="hoodie"><span>Худи</span></button>
+          <button class="cat-card" data-filter="tee"><span>Футболки</span></button>
+          <button class="cat-card" data-filter="pants"><span>Штаны &amp; карго</span></button>
+          <button class="cat-card" data-filter="acc"><span>Аксессуары</span></button>
+          <button class="cat-card" data-filter="all"><span>Всё подряд</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <header class="section-head row">
+          <div>
+            <h2>Новый дроп</h2>
+            <p>Лимитированная коллекция, скоро улетит</p>
+          </div>
+          <div class="filter-bar" role="tablist">
+            <button class="chip active" data-filter="all">Все</button>
+            <button class="chip" data-filter="hoodie">Худи</button>
+            <button class="chip" data-filter="tee">Футболки</button>
+            <button class="chip" data-filter="pants">Карго</button>
+            <button class="chip" data-filter="acc">Аксессуары</button>
+          </div>
+        </header>
+
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+
+    <section class="drop-banner" id="drops">
+      <div class="container drop-inner">
+        <div>
+          <span class="badge dark">NEXT DROP</span>
+          <h2>Пятница, 21:00 МСК</h2>
+          <p>«Night City» — капсула из 12 вещей. Подпишись, чтобы не проспать.</p>
+        </div>
+        <form class="sub-form" id="subForm" novalidate>
+          <input type="email" placeholder="твой@email" aria-label="Email" required />
+          <button type="submit" class="btn btn-primary">Уведомить меня</button>
+          <span class="sub-status" id="subStatus" aria-live="polite"></span>
+        </form>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="container">
+        <header class="section-head">
+          <h2>#вPULSE</h2>
+          <p>Отметь нас в сторис — попади в галерею</p>
+        </header>
+        <div class="social-grid">
+          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#ff7eb3,#ff1f6d)"><span>@anya_rave</span></a>
+          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#7a3cff,#00e0c6)"><span>@kostya_off</span></a>
+          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#ffd166,#06d6a0)"><span>@mira.tape</span></a>
+          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#0a84ff,#7a3cff)"><span>@dvnz</span></a>
+          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#ef476f,#ffd166)"><span>@lera_lo</span></a>
+          <a href="#" class="social-tile" style="background:linear-gradient(135deg,#00e0c6,#0a84ff)"><span>@nikitos</span></a>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="TikTok">TikTok</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Telegram">Telegram</a>
+          <a href="#" aria-label="VK">VK</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">PULSE<span class="logo-dot">.</span></a>
+        <p class="footer-tag">Стритвир для тех, кто чувствует ритм.</p>
+      </div>
+      <div>
+        <h4>Магазин</h4>
+        <a href="#catalog">Каталог</a>
+        <a href="#drops">Дропы</a>
+        <a href="#new">Новинки</a>
+      </div>
+      <div>
+        <h4>Помощь</h4>
+        <a href="#">Доставка</a>
+        <a href="#">Возврат</a>
+        <a href="#">Размерная сетка</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="mailto:hi@pulse.shop">hi@pulse.shop</a>
+        <a href="#">+7 (999) 123-45-67</a>
+      </div>
+    </div>
+    <div class="container copy">© 2026 PULSE. Все права защищены.</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Твоя корзина</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Закрыть">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Итого</span><strong id="cartTotal">0 ₽</strong></div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Оформить заказ</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

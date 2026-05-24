@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Accent Accounting ilə əlaqə - Professional mühasibatlıq xidmətləri." />
+  <title>Əlaqə - Accent Accounting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">▲</span>Accent
+      </a>
+      <nav class="nav" aria-label="Əsas menyu">
+        <a href="index.html">Ana Səhifə</a>
+        <a href="services.html">Xidmətlərimiz</a>
+        <a href="about.html">Haqqımızda</a>
+        <a href="contact.html" class="active">Əlaqə</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary header-cta">Məsləhət alın</a>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Əlaqə</h1>
+        <p>Sualınız var? Bizimlə əlaqə saxlayın, tez bir zamanda cavablandıraq</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Bizi tapın</h2>
+            <p>Peşəkar mühasibatlıq xidmətləri üçün bizimlə əlaqə saxlayın. Komandamız hər zaman sizin xidmətinizdədir.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <h4>Ünvan</h4>
+                  <p>Bakı şəhəri, Nəsimi rayonu,<br/>Əli Qasimov küçəsi 45, 4-cü mərtəbə</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <h4>Telefon</h4>
+                  <p><a href="tel:+994501234567">+994 50 123 45 67</a></p>
+                  <p><a href="tel:+994124567890">+994 12 456 78 90</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <h4>Email</h4>
+                  <p><a href="mailto:info@accent.az">info@accent.az</a></p>
+                  <p><a href="mailto:support@accent.az">support@accent.az</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">🕐</div>
+                <div>
+                  <h4>İş saatları</h4>
+                  <p>Bazar ertəsi - Cümə: 09:00 - 18:00</p>
+                  <p>Şənbə: 10:00 - 14:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h4>Bizi izləyin</h4>
+              <div class="social-icons">
+                <a href="#" class="social-link" aria-label="Facebook">f</a>
+                <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                <a href="#" class="social-link" aria-label="Instagram">ig</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" novalidate>
+              <h3>Pulsuz məsləhət alın</h3>
+              <p>Bizə yazın, 24 saat ərzində cavab verək.</p>
+              
+              <div class="form-group">
+                <label for="name">Ad və soyad *</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı daxil edin" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="email@domain.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+994 XX XXX XX XX" />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Şirkət adı</label>
+                <input type="text" id="company" name="company" placeholder="Şirkətinizin adı" />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="service">Maraqlandığınız xidmət</label>
+                <select id="service" name="service">
+                  <option value="">Seçin</option>
+                  <option value="accounting">Mühasibatlıq Hesabatları</option>
+                  <option value="tax">Vergi Hesablanması</option>
+                  <option value="banking">Bank Əməliyyatları</option>
+                  <option value="payroll">Əmək Haqqı İdarəetməsi</option>
+                  <option value="employees">İşçi Hesabatları</option>
+                  <option value="consulting">Maliyyə Konsultasiyası</option>
+                  <option value="audit">Maliyyə Auditi</option>
+                  <option value="other">Digər</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message">Mesajınız *</label>
+                <textarea id="message" name="message" placeholder="Mesajınızı yazın..." rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Göndər</button>
+              <p class="form-note">* işarəli sahələr mütləq doldurulmalıdır</p>
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <div class="map-placeholder">
+          <span>🗺️</span>
+          <p>Bakı, Nəsimi rayonu, Əli Qasimov küçəsi 45</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-icon">▲</span>Accent
+        </a>
+        <p class="footer-tag">Professional mühasibatlıq xidmətləri ilə biznesinizin gələcəyinə investisiya edin.</p>
+      </div>
+      <div>
+        <h4>Xidmətlər</h4>
+        <a href="services.html#accounting">Mühasibatlıq Hesabatları</a>
+        <a href="services.html#tax">Vergi Hesablanması</a>
+        <a href="services.html#banking">Bank Əməliyyatları</a>
+        <a href="services.html#payroll">Əmək Haqqı İdarəetməsi</a>
+      </div>
+      <div>
+        <h4>Şirkət</h4>
+        <a href="about.html">Haqqımızda</a>
+        <a href="about.html#team">Komandamız</a>
+        <a href="contact.html">Əlaqə</a>
+      </div>
+      <div>
+        <h4>Əlaqə</h4>
+        <a href="tel:+994501234567">+994 50 123 45 67</a>
+        <a href="mailto:info@accent.az">info@accent.az</a>
+        <span class="footer-address">Bakı, Nəsimi rayonu, Azərbaycan</span>
+      </div>
+    </div>
+    <div class="container copy">© 2026 Accent Accounting. Bütün hüquqlar qorunur.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

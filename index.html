@@ -1,230 +1,596 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="ru" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional mühasibatlıq xidmətləri - Maliyyə hesabatları, vergi konsultasiyası, əmək haqqı idarəetməsi." />
-  <title>Accent Accounting - Professional Mühasibatlıq Xidmətləri</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <meta name="description" content="VOYAGE — авиабилеты со скидкой до 60% и отели по всему миру. Бронируй за минуту." />
+  <title>VOYAGE · Билеты и отели по лучшим ценам</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">▲</span>Accent
-      </a>
-      <nav class="nav" aria-label="Əsas menyu">
-        <a href="index.html" class="active">Ana Səhifə</a>
-        <a href="services.html">Xidmətlərimiz</a>
-        <a href="about.html">Haqqımızda</a>
-        <a href="contact.html">Əlaqə</a>
-      </nav>
-      <a href="contact.html" class="btn btn-primary header-cta">Məsləhət alın</a>
-      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false">
-        <span></span><span></span><span></span>
+  <!-- Animated background -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#top" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 2L20 14L30 16L20 18L16 30L12 18L2 16L12 14L16 2Z" fill="url(#logoGrad)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+              <stop offset="0%" stop-color="#7c5cff"/>
+              <stop offset="100%" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="logo-text">VOYAGE</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#flights">Билеты</a>
+      <a href="#hotels">Отели</a>
+      <a href="#destinations">Направления</a>
+      <a href="#features">О сервисе</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
       </button>
+      <a class="btn btn-primary btn-sm" href="#flights">Начать</a>
     </div>
+
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
-  <main>
+  <main id="top">
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container hero-content">
-        <div class="hero-text">
-          <span class="badge">2005-ci ildən etibarən</span>
-          <h1>Maliyyəniz <span class="accent">dəqiqliklə</span> idarə olunur</h1>
-          <p class="hero-sub">Professional mühasibatlıq xidmətlərimizlə biznesinizin maliyyə sağlamlığını təmin edin. Hər bir rəqəm arxasında güclü tərəfdaşlıq durur.</p>
-          <div class="hero-cta">
-            <a href="contact.html" class="btn btn-primary">Pulsuz məsləhət</a>
-            <a href="services.html" class="btn btn-ghost">Xidmətlərimiz</a>
-          </div>
-          <ul class="hero-stats">
-            <li>
-              <strong>19+</strong>
-              <span>illik təcrübə</span>
-            </li>
-            <li>
-              <strong>500+</strong>
-              <span>müştəri</span>
-            </li>
-            <li>
-              <strong>25</strong>
-              <span>peşəkar komanda</span>
-            </li>
-          </ul>
+      <div class="hero-content">
+        <div class="badge reveal">
+          <span class="dot"></span>
+          Скидки до 60% · 200+ авиакомпаний · 2М+ отелей
         </div>
-        <div class="hero-visual">
-          <div class="hero-card-main">
-            <div class="hero-card-icon">📊</div>
-            <div class="hero-card-title">Maliyyə Hesabatı</div>
-            <div class="hero-card-desc">Dəqiq və vaxtında hesabatlar</div>
+        <h1 class="hero-title reveal">
+          Путешествуй <span class="grad-text">умнее.</span><br/>
+          Бронируй <span class="grad-text-2">быстрее.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Сравниваем цены среди ведущих сервисов и находим лучшее предложение
+          за секунды. Без скрытых сборов. С кэшбэком.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#flights" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            Найти билет
+          </a>
+          <a href="#hotels" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+            Подобрать отель
+          </a>
+        </div>
+
+        <div class="trust-row reveal">
+          <div class="trust-item">
+            <strong>4.9</strong>
+            <span>★★★★★<br/>12 400+ отзывов</span>
           </div>
-          <div class="hero-card-secondary hero-card-2">
-            <span>✓</span> Vergi Optimizasiyası
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>1.8M+</strong>
+            <span>счастливых<br/>путешественников</span>
           </div>
-          <div class="hero-card-secondary hero-card-3">
-            <span>✓</span> Əmək Haqqı İdarəetməsi
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>24/7</strong>
+            <span>поддержка<br/>на русском</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="intro">
-      <div class="container intro-grid">
-        <div class="intro-text">
-          <h2>Niyə məhz <span class="accent">Accent</span>?</h2>
-          <p>Biz mühasibatlığı sadəcə rəqəmlər yığmaqdan ibarət görmürük. Hər bir müştərimiz üçün strateji tərəfdaş kimi çalışırıq. Komandamız 19 ildən artıq təcrübəsi ilə sizin biznesinizin maliyyə sağlamlığını qoruyur.</p>
-          <p>İstər kiçik sahibkarlıq, istərsə də iri müəssəə olsun - hər bir müştərimizə fərdi yanaşırıq və onların ehtiyaclarına uyğun həllər təklif edirik.</p>
-          <a href="about.html" class="btn-text">Komandamız ilə tanış olun →</a>
-        </div>
-        <div class="intro-features">
-          <div class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h3>Fərdi Yanaşma</h3>
-            <p>Hər müştəri üçün xüsusi hazırlanmış həllər</p>
+      <!-- 3D Scene -->
+      <div class="hero-3d" aria-hidden="true">
+        <div class="scene">
+          <div class="planet">
+            <div class="planet-ring"></div>
+            <div class="planet-core"></div>
+            <div class="planet-glow"></div>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Sürətli Xidmət</h3>
-            <p>Vaxtında və dəqiq hesabatlar</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Məxfilik</h3>
-            <p>Məlumatlarınız tam təhlükəsizlikdə</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services-preview">
-      <div class="container">
-        <header class="section-head">
-          <h2>Xidmətlərimiz</h2>
-          <p>Biznesiniz üçün lazım olan bütün mühasibatlıq xidmətləri bir yerdə</p>
-        </header>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">📑</div>
-            <h3>Mühasibatlıq Hesabatları</h3>
-            <p>Müntəzəm və dəqiq maliyyə hesabatları ilə biznesinizin vəziyyətini hər zaman bilin</p>
-            <a href="services.html#accounting" class="btn-link">Ətraflı →</a>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🧮</div>
-            <h3>Vergi Hesablanması</h3>
-            <p>Vergi qanunvericiliyinə uyğun olaraq optimal vergi strategiyaları</p>
-            <a href="services.html#tax" class="btn-link">Ətraflı →</a>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🏦</div>
-            <h3>Bank Əməliyyatları</h3>
-            <p>Bank hesablarının effektiv idarə edilməsi və nəzarəti</p>
-            <a href="services.html#banking" class="btn-link">Ətraflı →</a>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">💰</div>
-            <h3>Əmək Haqqı İdarəetməsi</h3>
-            <p>Əmək haqqı hesablanması, vergilərin tutulması və ödənişlər</p>
-            <a href="services.html#payroll" class="btn-link">Ətraflı →</a>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">👥</div>
-            <h3>İşçi Hesabatları</h3>
-            <p>İşçilərin əmək fəaliyyətinin tam hesabatı və statistikası</p>
-            <a href="services.html#employees" class="btn-link">Ətraflı →</a>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">📈</div>
-            <h3>Maliyyə Konsultasiyası</h3>
-            <p>Biznesinizin maliyyə growth strategiyası üzrə məsləhətlər</p>
-            <a href="services.html#consulting" class="btn-link">Ətraflı →</a>
-          </div>
-        </div>
-        <div class="section-cta">
-          <a href="services.html" class="btn btn-primary">Bütün xidmətləri gör</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <div class="container">
-        <header class="section-head center">
-          <h2>Müştərilərimiz nə deyir?</h2>
-          <p>Müştərilərimizin təcrübələri ilə tanış olun</p>
-        </header>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-stars">★★★★★</div>
-            <p>"Accent komandası ilə işləmək bizə vergi optimizasiyasında 30%-dək qənaət etməyə imkan verdi. Peşəkarlıqları təkcə texniki deyil, həm də insanlara yanaşmada özünü göstərir."</p>
-            <div class="testimonial-author">
-              <strong>Elşən Məmmədov</strong>
-              <span>TechStart MMC - Direktor</span>
+          <div class="floating-card card-flight">
+            <div class="fc-head">
+              <span class="fc-airline">SkyAir · SU-1102</span>
+              <span class="fc-price">€129</span>
+            </div>
+            <div class="fc-route">
+              <div class="fc-city"><strong>MOW</strong><span>09:40</span></div>
+              <div class="fc-line">
+                <svg viewBox="0 0 100 20" fill="none">
+                  <path d="M0 10 L90 10" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+                  <path d="M82 4 L92 10 L82 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="fc-time">3ч 25м</span>
+              </div>
+              <div class="fc-city"><strong>BCN</strong><span>13:05</span></div>
             </div>
           </div>
-          <div class="testimonial-card">
-            <div class="testimonial-stars">★★★★★</div>
-            <p>"5 ildir Accent ilə çalışırıq. Hər ay vaxtında və dəqiq hesabatlar alırıq. Əmək haqqı idarəetməsi tam avtomatlaşdırılıb və heç bir problem yoxdur."</p>
-            <div class="testimonial-author">
-              <strong>Nigar Əliyeva</strong>
-              <span>RetailPro ASC - Maliyyə meneceri</span>
+          <div class="floating-card card-hotel">
+            <div class="fc-hotel-img">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+            </div>
+            <div>
+              <div class="fc-hotel-name">Azure Bay Resort</div>
+              <div class="fc-hotel-meta">★★★★★ · Мальдивы</div>
+              <div class="fc-hotel-price">от <strong>€189</strong>/ночь</div>
             </div>
           </div>
-          <div class="testimonial-card">
-            <div class="testimonial-stars">★★★★★</div>
-            <p>"Startap olaraq ilk ildə maliyyə idarəetməsini düzgün qurmaq çox vacib idi. Accent bizə strukturlu və ölçülə bilən sistem qurmağa kömək etdi."</p>
-            <div class="testimonial-author">
-              <strong>Rəşad Quliyev</strong>
-              <span>InnovateLab - Baş direktor</span>
-            </div>
+          <div class="floating-card card-stat">
+            <div class="fc-stat-num">−42%</div>
+            <div class="fc-stat-label">средняя экономия</div>
+          </div>
+          <div class="plane" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-box">
-          <h2>Biznesinizin maliyyə sağlamlığını bu gün təmin edin</h2>
-          <p>Pulsuz məsləhət üçün bizimlə əlaqə saxlayın. Komandamız sizin suallarınızı cavablandırmağa hazırdır.</p>
-          <a href="contact.html" class="btn btn-white">Məsləhət alın</a>
+    <!-- FLIGHTS / SEARCH -->
+    <section id="flights" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Авиабилеты</span>
+        <h2>Найди свой следующий полёт</h2>
+        <p>Мы сравниваем цены среди 200+ авиакомпаний и онлайн-агентств в реальном времени.</p>
+      </div>
+
+      <div class="search-card reveal">
+        <div class="search-tabs">
+          <button class="tab active" data-tab="flight">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            Билеты
+          </button>
+          <button class="tab" data-tab="hotel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+            Отели
+          </button>
+          <button class="tab" data-tab="combo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+            Билет + отель
+          </button>
+        </div>
+
+        <form class="search-form" id="searchForm">
+          <div class="field field-from">
+            <label>Откуда</label>
+            <input type="text" placeholder="Москва, MOW" value="Москва" />
+            <svg class="field-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/></svg>
+          </div>
+          <button type="button" class="swap-btn" aria-label="Поменять местами">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16V4M3 8l4-4 4 4M17 8v12M21 16l-4 4-4-4"/></svg>
+          </button>
+          <div class="field field-to">
+            <label>Куда</label>
+            <input type="text" placeholder="Барселона, BCN" value="Барселона" />
+            <svg class="field-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/></svg>
+          </div>
+          <div class="field field-date">
+            <label>Туда</label>
+            <input type="date" />
+          </div>
+          <div class="field field-date">
+            <label>Обратно</label>
+            <input type="date" />
+          </div>
+          <div class="field field-pax">
+            <label>Пассажиры</label>
+            <select>
+              <option>1 взрослый</option>
+              <option>2 взрослых</option>
+              <option>2 взр + 1 реб</option>
+              <option>Семья (4)</option>
+            </select>
+          </div>
+          <a href="#" class="btn btn-primary btn-search" data-ref="flight-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            Искать
+          </a>
+        </form>
+
+        <div class="search-extras">
+          <label class="chip-check"><input type="checkbox" /> Прямые рейсы</label>
+          <label class="chip-check"><input type="checkbox" /> Багаж включён</label>
+          <label class="chip-check"><input type="checkbox" /> Гибкие даты ±3 дня</label>
+          <label class="chip-check"><input type="checkbox" /> Эконом</label>
+        </div>
+      </div>
+
+      <!-- Popular flights -->
+      <h3 class="sub-title reveal">Популярные направления из Москвы</h3>
+      <div class="cards-row" id="flightsRow">
+        <article class="flight-card reveal" data-link="https://www.aviasales.ru/?marker=demo">
+          <div class="fc-img" style="--img:url('https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80')"></div>
+          <div class="fc-body">
+            <div class="fc-row">
+              <span class="fc-tag">Прямой</span>
+              <span class="fc-discount">−38%</span>
+            </div>
+            <h4>Стамбул</h4>
+            <div class="fc-dates">12 июн — 19 июн · 7 ночей</div>
+            <div class="fc-bottom">
+              <div><span class="fc-old">€220</span><strong>€136</strong></div>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </article>
+        <article class="flight-card reveal" data-link="https://www.aviasales.ru/?marker=demo">
+          <div class="fc-img" style="--img:url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80')"></div>
+          <div class="fc-body">
+            <div class="fc-row">
+              <span class="fc-tag">1 пересадка</span>
+              <span class="fc-discount">−45%</span>
+            </div>
+            <h4>Дубай</h4>
+            <div class="fc-dates">02 авг — 09 авг · 7 ночей</div>
+            <div class="fc-bottom">
+              <div><span class="fc-old">€320</span><strong>€176</strong></div>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </article>
+        <article class="flight-card reveal" data-link="https://www.aviasales.ru/?marker=demo">
+          <div class="fc-img" style="--img:url('https://images.unsplash.com/photo-1583422409516-4f6c6c8e2c2f?w=800&q=80'),linear-gradient(135deg,#7c5cff,#22d3ee)"></div>
+          <div class="fc-body">
+            <div class="fc-row">
+              <span class="fc-tag">Прямой</span>
+              <span class="fc-discount">−29%</span>
+            </div>
+            <h4>Тбилиси</h4>
+            <div class="fc-dates">21 июл — 28 июл · 7 ночей</div>
+            <div class="fc-bottom">
+              <div><span class="fc-old">€180</span><strong>€128</strong></div>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </article>
+        <article class="flight-card reveal" data-link="https://www.aviasales.ru/?marker=demo">
+          <div class="fc-img" style="--img:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80')"></div>
+          <div class="fc-body">
+            <div class="fc-row">
+              <span class="fc-tag">Прямой</span>
+              <span class="fc-discount">−52%</span>
+            </div>
+            <h4>Париж</h4>
+            <div class="fc-dates">14 сен — 21 сен · 7 ночей</div>
+            <div class="fc-bottom">
+              <div><span class="fc-old">€410</span><strong>€198</strong></div>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOTELS -->
+    <section id="hotels" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Отели</span>
+        <h2>Подборка для идеального отдыха</h2>
+        <p>От бутик-отелей в центре до вилл на берегу океана. Бесплатная отмена и моментальное подтверждение.</p>
+      </div>
+
+      <div class="hotels-grid">
+        <article class="hotel-card hotel-large reveal" data-link="https://www.booking.com/index.html?aid=demo">
+          <div class="hc-img" style="--img:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80')"></div>
+          <div class="hc-overlay"></div>
+          <div class="hc-content">
+            <span class="hc-tag">★★★★★ · Лучший выбор</span>
+            <h3>Azure Bay Resort</h3>
+            <div class="hc-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/></svg>
+              Мальдивы, Северный Мале
+            </div>
+            <div class="hc-amenities">
+              <span>Пляж</span><span>SPA</span><span>All inclusive</span><span>Бассейн</span>
+            </div>
+            <div class="hc-bottom">
+              <div><span class="hc-old">€289</span><strong>€189</strong><small>/ночь</small></div>
+              <span class="btn btn-light">Забронировать</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hotel-card reveal" data-link="https://www.booking.com/index.html?aid=demo">
+          <div class="hc-img" style="--img:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80')"></div>
+          <div class="hc-overlay"></div>
+          <div class="hc-content">
+            <span class="hc-tag">★★★★ · Городской</span>
+            <h3>Sunset Loft Istanbul</h3>
+            <div class="hc-meta">Стамбул, Галата</div>
+            <div class="hc-bottom">
+              <div><strong>€78</strong><small>/ночь</small></div>
+              <span class="btn btn-light btn-sm">Подробнее</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hotel-card reveal" data-link="https://www.booking.com/index.html?aid=demo">
+          <div class="hc-img" style="--img:url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80')"></div>
+          <div class="hc-overlay"></div>
+          <div class="hc-content">
+            <span class="hc-tag">★★★★★ · Горы</span>
+            <h3>Alpine Crystal Lodge</h3>
+            <div class="hc-meta">Швейцария, Церматт</div>
+            <div class="hc-bottom">
+              <div><strong>€245</strong><small>/ночь</small></div>
+              <span class="btn btn-light btn-sm">Подробнее</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hotel-card reveal" data-link="https://www.booking.com/index.html?aid=demo">
+          <div class="hc-img" style="--img:url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80')"></div>
+          <div class="hc-overlay"></div>
+          <div class="hc-content">
+            <span class="hc-tag">★★★★ · Бутик</span>
+            <h3>Riad Marrakech</h3>
+            <div class="hc-meta">Марокко, Марракеш</div>
+            <div class="hc-bottom">
+              <div><strong>€92</strong><small>/ночь</small></div>
+              <span class="btn btn-light btn-sm">Подробнее</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hotel-card hotel-wide reveal" data-link="https://www.booking.com/index.html?aid=demo">
+          <div class="hc-img" style="--img:url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&q=80')"></div>
+          <div class="hc-overlay"></div>
+          <div class="hc-content">
+            <span class="hc-tag">★★★★★ · Премиум</span>
+            <h3>Royal Skyline Dubai</h3>
+            <div class="hc-meta">ОАЭ, Дубай Марина</div>
+            <div class="hc-amenities">
+              <span>Бассейн на крыше</span><span>Spa</span><span>Вид на море</span>
+            </div>
+            <div class="hc-bottom">
+              <div><span class="hc-old">€420</span><strong>€275</strong><small>/ночь</small></div>
+              <span class="btn btn-light">Забронировать</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Почему мы</span>
+        <h2>Сервис, который любят миллионы</h2>
+        <p>Мы — не очередной поисковик. Это команда, которая делает путешествия проще.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-ico f1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <h3>Сравнение в один клик</h3>
+          <p>Цены из 200+ источников. Покажем самый дешёвый вариант за 1.2 секунды.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-ico f2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>Без скрытых сборов</h3>
+          <p>Цена, которую видишь — та, которую платишь. Никаких сюрпризов на этапе оплаты.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-ico f3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Кэшбэк до 5%</h3>
+          <p>Возвращаем часть стоимости на следующее путешествие. Автоматически.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-ico f4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Поддержка 24/7</h3>
+          <p>Живые люди на связи в любое время суток. Помогут с возвратом, заменой, переносом.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-ico f5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Безопасная оплата</h3>
+          <p>SSL-шифрование, 3D-Secure, оплата по частям. Деньги защищены страховкой.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-ico f6">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Умные подборки</h3>
+          <p>AI анализирует твои предпочтения и предлагает направления, которые точно понравятся.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section id="destinations" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Тренды</span>
+        <h2>Куда летят прямо сейчас</h2>
+        <p>Самые горячие направления этого сезона. Цены обновляются каждые 5 минут.</p>
+      </div>
+
+      <div class="dest-marquee reveal">
+        <div class="marquee-track">
+          <div class="dest-pill"><span class="flag">🇹🇷</span>Стамбул <em>от €136</em></div>
+          <div class="dest-pill"><span class="flag">🇦🇪</span>Дубай <em>от €176</em></div>
+          <div class="dest-pill"><span class="flag">🇬🇪</span>Тбилиси <em>от €128</em></div>
+          <div class="dest-pill"><span class="flag">🇫🇷</span>Париж <em>от €198</em></div>
+          <div class="dest-pill"><span class="flag">🇮🇹</span>Рим <em>от €210</em></div>
+          <div class="dest-pill"><span class="flag">🇪🇸</span>Барселона <em>от €189</em></div>
+          <div class="dest-pill"><span class="flag">🇯🇵</span>Токио <em>от €620</em></div>
+          <div class="dest-pill"><span class="flag">🇹🇭</span>Бангкок <em>от €390</em></div>
+          <div class="dest-pill"><span class="flag">🇲🇻</span>Мале <em>от €490</em></div>
+          <div class="dest-pill"><span class="flag">🇪🇬</span>Каир <em>от €165</em></div>
+          <!-- duplicate for seamless loop -->
+          <div class="dest-pill"><span class="flag">🇹🇷</span>Стамбул <em>от €136</em></div>
+          <div class="dest-pill"><span class="flag">🇦🇪</span>Дубай <em>от €176</em></div>
+          <div class="dest-pill"><span class="flag">🇬🇪</span>Тбилиси <em>от €128</em></div>
+          <div class="dest-pill"><span class="flag">🇫🇷</span>Париж <em>от €198</em></div>
+          <div class="dest-pill"><span class="flag">🇮🇹</span>Рим <em>от €210</em></div>
+        </div>
+      </div>
+
+      <div class="dest-grid">
+        <a href="https://www.aviasales.ru/?marker=demo" class="dest-card big reveal" target="_blank" rel="noopener nofollow sponsored" style="--img:url('https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?w=1200&q=80')">
+          <div class="dest-inner">
+            <span class="dest-meta">Топ недели</span>
+            <h3>Бали</h3>
+            <p>Серферский рай и рисовые террасы. <strong>от €590</strong></p>
+          </div>
+        </a>
+        <a href="https://www.aviasales.ru/?marker=demo" class="dest-card reveal" target="_blank" rel="noopener nofollow sponsored" style="--img:url('https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800&q=80')">
+          <div class="dest-inner">
+            <span class="dest-meta">Азия</span>
+            <h3>Токио</h3>
+            <p><strong>от €620</strong></p>
+          </div>
+        </a>
+        <a href="https://www.aviasales.ru/?marker=demo" class="dest-card reveal" target="_blank" rel="noopener nofollow sponsored" style="--img:url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80')">
+          <div class="dest-inner">
+            <span class="dest-meta">Европа</span>
+            <h3>Санторини</h3>
+            <p><strong>от €245</strong></p>
+          </div>
+        </a>
+        <a href="https://www.aviasales.ru/?marker=demo" class="dest-card reveal" target="_blank" rel="noopener nofollow sponsored" style="--img:url('https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&q=80')">
+          <div class="dest-inner">
+            <span class="dest-meta">Восток</span>
+            <h3>Дубай</h3>
+            <p><strong>от €176</strong></p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Отзывы</span>
+        <h2>Что говорят путешественники</h2>
+      </div>
+      <div class="testimonials">
+        <figure class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Нашла билеты в Барселону на 40% дешевле, чем у конкурентов. Оплата прошла за минуту, маршрут пришёл сразу».</blockquote>
+          <figcaption>
+            <span class="avatar" style="background:linear-gradient(135deg,#ff7eb6,#7c5cff)">А</span>
+            <div><strong>Анна К.</strong><small>Москва · 2 поездки</small></div>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Удобный поиск отелей с фильтрами по wifi и завтракам. Кэшбэк реально пришёл — небольшая мелочь, но приятно».</blockquote>
+          <figcaption>
+            <span class="avatar" style="background:linear-gradient(135deg,#22d3ee,#34d399)">Д</span>
+            <div><strong>Дмитрий П.</strong><small>СПб · 5 поездок</small></div>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>«Поддержка ночью ответила за 3 минуты, когда отменили рейс. Перебронировали на следующий день — без доплат».</blockquote>
+          <figcaption>
+            <span class="avatar" style="background:linear-gradient(135deg,#fbbf24,#ff7eb6)">М</span>
+            <div><strong>Мария Л.</strong><small>Казань · 3 поездки</small></div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="cta reveal">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2>Готов в путь?</h2>
+          <p>Сравни цены прямо сейчас и забронируй за пару минут. Без регистрации и обязательств.</p>
+          <div class="cta-buttons">
+            <a class="btn btn-primary" href="#flights">Найти билет</a>
+            <a class="btn btn-ghost btn-light-bg" href="#hotels">Подобрать отель</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
       <div>
-        <a href="index.html" class="logo">
-          <span class="logo-icon">▲</span>Accent
+        <a href="#top" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2L20 14L30 16L20 18L16 30L12 18L2 16L12 14L16 2Z" fill="url(#logoGrad2)"/>
+              <defs>
+                <linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32">
+                  <stop offset="0%" stop-color="#7c5cff"/>
+                  <stop offset="100%" stop-color="#22d3ee"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="logo-text">VOYAGE</span>
         </a>
-        <p class="footer-tag">Professional mühasibatlıq xidmətləri ilə biznesinizin gələcəyinə investisiya edin.</p>
+        <p class="footer-sub">Умный поиск билетов и отелей. Сравниваем сотни сервисов и находим лучшее.</p>
       </div>
       <div>
-        <h4>Xidmətlər</h4>
-        <a href="services.html#accounting">Mühasibatlıq Hesabatları</a>
-        <a href="services.html#tax">Vergi Hesablanması</a>
-        <a href="services.html#banking">Bank Əməliyyatları</a>
-        <a href="services.html#payroll">Əmək Haqqı İdarəetməsi</a>
+        <h4>Сервис</h4>
+        <a href="#flights">Авиабилеты</a>
+        <a href="#hotels">Отели</a>
+        <a href="#destinations">Направления</a>
+        <a href="#features">Как работает</a>
       </div>
       <div>
-        <h4>Şirkət</h4>
-        <a href="about.html">Haqqımızda</a>
-        <a href="about.html#team">Komandamız</a>
-        <a href="contact.html">Əlaqə</a>
+        <h4>Помощь</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Возврат билета</a>
+        <a href="#">Связаться с нами</a>
+        <a href="#">Безопасность</a>
       </div>
       <div>
-        <h4>Əlaqə</h4>
-        <a href="tel:+994501234567">+994 50 123 45 67</a>
-        <a href="mailto:info@accent.az">info@accent.az</a>
-        <span class="footer-address">Bakı, Nəsimi rayonu, Azərbaycan</span>
+        <h4>Подписка</h4>
+        <p class="footer-sub">Подборки спецпредложений раз в неделю. Без спама.</p>
+        <form class="subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Подписан ✓'">
+          <input type="email" placeholder="your@email.com" required />
+          <button>→</button>
+        </form>
       </div>
     </div>
-    <div class="container copy">© 2026 Accent Accounting. Bütün hüquqlar qorunur.</div>
+    <div class="footer-bottom">
+      <span>© 2026 VOYAGE. Все права защищены.</span>
+      <span>Партнёры: Aviasales · Booking.com · Trip.com · Hotellook</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>

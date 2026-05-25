@@ -13,10 +13,10 @@
   // Drop in your real partner markers/aids here. The site uses Aviasales
   // for flights and Booking.com for hotels by default, both with a "marker".
   const REF = {
-    flightSearch: 'https://www.aviasales.ru/?marker=demo',
-    hotelSearch: 'https://search.hotellook.com/?marker=demo',
-    flight: 'https://www.aviasales.ru/?marker=demo',
-    hotel: 'https://www.booking.com/index.html?aid=demo',
+    flightSearch: 'https://aviasales.tpk.lv/0ttz8YiE',
+    hotelSearch: 'https://aviasales.tpk.lv/0ttz8YiE',
+    flight: 'https://aviasales.tpk.lv/0ttz8YiE',
+    hotel: 'https://aviasales.tpk.lv/0ttz8YiE',
   };
 
   // ---------- THEME ----------

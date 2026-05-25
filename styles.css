@@ -936,10 +936,11 @@ button { font-family: inherit; cursor: pointer; }
   max-width: var(--maxw);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1fr auto;
   gap: 40px;
   margin-bottom: 40px;
 }
+.footer-grid > :last-child { justify-self: end; text-align: right; }
 .footer-grid h4 { font-size: 1rem; margin-bottom: 16px; }
 .footer-grid a {
   display: block;
@@ -1034,6 +1035,7 @@ button { font-family: inherit; cursor: pointer; }
   .dest-card.big { grid-column: span 1; }
   .testimonials { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-grid > :last-child { justify-self: start; text-align: left; }
   .footer-bottom { flex-direction: column; }
   .trust-row { gap: 16px; }
   .trust-divider { display: none; }
